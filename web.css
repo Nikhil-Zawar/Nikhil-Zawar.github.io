@@ -303,6 +303,7 @@ nav ul li a:hover::after{
     display: block;
     border-radius: 13px;
     transition: 0.5s;
+    padding: 30px 30px;
 }
 
     
@@ -316,11 +317,13 @@ nav ul li a:hover::after{
     color: black;
     border-radius: 10px;
     transition: 0.8s;
+    box-shadow: 10px 10px 5px #FC7A1E, -10px -10px 5px #5E0080, -15px -15px 40px #5e0080ab, 15px 15px 40px #fc7a1ea2;
+
 }
 
 .about-content:hover{
-    background-color: rgba(255, 255, 255, 0.414);
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 2);
+    background-color: #ffffff6a;
+    box-shadow: -10px -10px 20px #fc7a1ed1,10px 10px 20px #5e0080cc;
     transform: scale(1.05);
 }
 
@@ -491,6 +494,68 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+
+/* ---------------- OPPORTUNITIES ----------------  */
+#opportunities{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.opportunity-container{
+    /* background: #5E0080; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oppo-left{
+    width: 50%;
+    height: 100%;
+    /* background: #0D9276; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oppo-right{
+    width: 45%;
+    height: 100%;
+    /* background: #0D9276; */
+}
+
+.oppo-heading{
+    height: 28%;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.oppo-content-container{
+    height: 70%;
+    width: 100%;
+    padding: 20px 20px;
+    background: whitesmoke;
+}
+
+.oppo-content{
+    color: black;
+    padding: 30px 30px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.oppo-content:hover{
+    background-color: rgba(255, 255, 255, 0.414);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 2);
+    transform: scale(1.05);
+}
+.oppo-right img{
+    padding-right: 30px;
+    height: 90%;
+    width: 90%;
+    box-shadow: 10px 10px 5px #FC7A1E, -10px -10px 5px #5E0080, -15px -15px 40px #5e0080ab, 15px 15px 40px #fc7a1ea2;
+}
+
 
 /* ----------- CONTACT ---------------------- */
 #contact{
