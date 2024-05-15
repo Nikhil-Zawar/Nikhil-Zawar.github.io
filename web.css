@@ -89,7 +89,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #5E0080;
+    background: #40BCD8;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -124,7 +124,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     padding: 30px 30px;
     box-shadow: 
-    5px 5px 15px #5e0080a0,-5px -5px 15px #fc7a1e7d /* Top left */; /* Bottom right */
+    5px 5px 15px #40BCD8a0,-5px -5px 15px #4CB9637d /* Top left */; /* Bottom right */
 }
 
 
@@ -152,7 +152,7 @@ nav ul li a:hover::after{
 
 .hero-col1-content p:hover{
     transform: scale(1.05);
-    color: #5E0080;
+    color: #40BCD8;
 }
 
 .hero-col1-content p i{
@@ -317,13 +317,14 @@ nav ul li a:hover::after{
     color: black;
     border-radius: 10px;
     transition: 0.8s;
-    box-shadow: 10px 10px 5px #FC7A1E, -10px -10px 5px #5E0080, -15px -15px 40px #5e0080ab, 15px 15px 40px #fc7a1ea2;
+    /* box-shadow: 10px 10px 5px #4CB963, -10px -10px 5px #40BCD8, -15px -15px 40px #40BCD8ab, 15px 15px 40px #4CB963a2; */
 
 }
 
 .about-content:hover{
     background-color: #ffffff6a;
-    box-shadow: -10px -10px 20px #fc7a1ed1,10px 10px 20px #5e0080cc;
+    box-shadow: 0px 0px 20px #5b5b5bd1;
+    /* box-shadow: -5px -5px 40px #4CB963d1,5px 5px 40px #40BCD8cc; */
     transform: scale(1.05);
 }
 
@@ -354,7 +355,7 @@ nav ul li a:hover::after{
 }
 
 .research-category{
-    background: #5E0080;
+    background: #40BCD8;
     padding: 30px;
     border-radius: 10px;
     transition: background 1.5s, transform 1s;
@@ -389,7 +390,7 @@ nav ul li a:hover::after{
 }
 
 .research-category:hover{
-    background: #FC7A1E;
+    background: #4CB963;
     transform: translateY(-10px);
 }
 
@@ -483,17 +484,17 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #5E0080;
+    border: 1px solid #40BCD8;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #5E0080;
+    color: #40BCD8;
     transition: background 0.5s;
 }
 
 .btn:hover{
     color: white;
-    background: #5E0080;
+    background: #40BCD8;
 }
 
 /* ---------------- OPPORTUNITIES ----------------  */
@@ -503,7 +504,7 @@ nav ul li a:hover::after{
 }
 
 .opportunity-container{
-    /* background: #5E0080; */
+    /* background: #40BCD8; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -521,8 +522,9 @@ nav ul li a:hover::after{
 }
 
 .oppo-right{
-    width: 45%;
+    width: 35%;
     height: 100%;
+    align-items: stretch;
     /* background: #0D9276; */
 }
 
@@ -554,7 +556,7 @@ nav ul li a:hover::after{
     padding-right: 30px;
     height: 90%;
     width: 90%;
-    box-shadow: 10px 10px 5px #FC7A1E, -10px -10px 5px #5E0080, -15px -15px 40px #5e0080ab, 15px 15px 40px #fc7a1ea2;
+    /* box-shadow: 10px 10px 5px #4CB963, -10px -10px 5px #40BCD8, -15px -15px 40px #40BCD8ab, 15px 15px 40px #4CB963a2; */
 }
 
 
@@ -569,14 +571,15 @@ nav ul li a:hover::after{
 }
 
 .contact-row{
-    margin-left: 40px;
-    margin-right: 40px;
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background: #e4e2e2a5;
     border-radius: 20px;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
 }
 
 .contact-left{
@@ -587,30 +590,32 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 20px;
+    padding-left: 20px;
     font-size: 20px;
 }
 .contact-left p i{
-    color: #5E0080;
+    color: #40BCD8;
     margin-right: 15px;
     font-size: 25px;
 }
 
 .btn.btn2{
     display: inline-block;
-    color: #5E0080;
+    color: #40BCD8;
     transition: 0.5s;
     /* background: #ff004f; */
 }
 
 .btn.btn2:hover{
     display: inline-block;
-    background: #5E0080;
+    background: #40BCD8;
     color: white;
     /* background: #ff004f; */
 }
 
 .contact-right form{
     width: 100%;
+    padding-right: 30px;
 }
 
 form input, form textarea{
@@ -620,6 +625,7 @@ form input, form textarea{
     outline: none;
     background: #3c3c3c;
     padding: 10px;
+    padding-top: 20px;
     margin: 10px 0;
     color: #fff;
     font-size: 15px;
@@ -673,7 +679,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #5E0080;
+        background: #40BCD8;
         color: white;
         position: fixed;
         top: 0;
