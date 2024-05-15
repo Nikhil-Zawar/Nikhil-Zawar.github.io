@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DST Centre of Excellence in Climate Modeling</title>
-    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="style_dcm.css">
     <script src="https://kit.fontawesome.com/5e424636bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
                         <li><a onclick="scrollToAbout()">About</a></li>
                         <li><a onclick="scrollToResearch()">Research</a></li>
                         <li><a onclick="scrollToPeople()">People</a></li>
-                        <li><a href="#">Opportunities</a></li>
+                        <li><a onclick="scrollToOpportunities()">Opportunities</a></li>
                         <li><a onclick="scrollToContact()">Contact Us</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
@@ -95,14 +95,6 @@
 <div id="about">
     <div class="about-container">
         <h1 class="about-sub-title">About</h1>
-        <!-- <video autoplay muted loop>
-            <source src="your-video-file.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
-        <!-- <video id="video-background" autoplay muted loop>
-            <source src="videos/videoplayback (4).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
         <div class="about-content">
         The present state of the planet, with the rapid changing of climate, and global warming becoming more apparent around the world, is one of the most worrying concerns the mankind has today. Being a young and developing country, India, at the crossroads of development and sustainability, will find it much more challenging in times to come. In order to achieve the ambitious economic goal of five trillion USD, while it takes the reforms that were long promised i.e. relaxation in regulations and controlling, reformation of labour laws, privatisation of state entities, and investment in infrastructure development, it should make sure it is achieved not at the cost of its climate — a highly complex and tough task that needs the cooperation of the private and public sectors. In this regard, to address certain pressing issues of climate change in India, IIT Delhi has taken a major initiative and created the DST Centre of Excellence in Climate Modeling with the support of the DST, GoI.
         <br><br>
@@ -309,6 +301,30 @@
         <!-- <a  href="#" class="btn">See more</a> -->
     </div>
 </div>
+<div id="opportunities">
+    <div class="opportunity-container">
+        <div class="oppo-left">
+            <div class="oppo-heading">
+                <h1 class="sub-title">Opportunities</h1>
+            </div>
+            <div class="oppo-content-container">
+                <div class="oppo-content">
+                    We invite researchers from natural science and pertaining interdisciplinary areas to join the DST Centre of Excellence in Climate Modeling. Currently, we are looking for candidates to work in the following research areas
+                    <br><br>
+                    The research positions in these areas are available at various levels, e.g., Junior Research Fellow, Senior Research Fellow, Project Associate, Research Associate. The qualification for these positions is as per Institute and DST’s guidelines. The salary for these positions is based on qualification and experience.
+                    <br><br>
+                    Besides, we host short and long term visitors and will be more than happy to welcome you if you want to visit for research collaborations; in that case please feel free to contact Dr. Saroj Kanta Mishra at skm@iitd.ac.in.
+                </div>
+                <!-- <div class="oppo-content">Opp 2</div> -->
+                <!-- <div class="oppo-content">Opp 3</div> -->
+                <!-- <div class="oppo-content">Opp 4</div> -->
+            </div>
+        </div>
+        <div class="oppo-right">
+            <img src="images/opportune.jpg">
+        </div>
+    </div>
+</div>
 <!-- --------------------------- CONTACT --------------------------- -->
 <div id="contact">
     <div class="contact-container">
@@ -339,7 +355,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>All rights reserved © 2021 | DST Centre of Excellence in
+        <p>All rights reserved © 2024 | DST Centre of Excellence in
             Climate Modeling.</p>
             <small class="text-muted">Developed by <a class="dev-link" target="_blank"
                 href="https://www.linkedin.com/in/nikhil-zawar-265790250/">Nikhil Zawar
@@ -401,7 +417,7 @@
         var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
         
         // Add 100px to the about position
-        var scrollToPosition = aboutPosition - 140;
+        var scrollToPosition = aboutPosition - 70;
         
         // Scroll to the calculated position
         window.scrollTo({
@@ -443,6 +459,24 @@
             behavior: 'smooth'
         });
     }
+
+    function scrollToOpportunities() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('opportunities');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 130;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
     function scrollToContact() {
         // Get the current scroll position of the page
         var currentPosition = window.scrollY || window.pageYOffset;
@@ -463,29 +497,30 @@
 </script>
 
 <script>
-    window.onload = function() {
-        var aboutSection = document.getElementById('about');
-        var videoBackground = document.getElementById('video-background');
+    const image = document.getElementById('image');
 
-        var aboutTop = aboutSection.offsetTop;
-        var aboutBottom = aboutTop + aboutSection.offsetHeight;
+// Function to toggle shadow class
+function toggleShadow() {
+    image.classList.toggle('shadow');
+}
 
-        // Set video background position to cover the about section
-        videoBackground.style.top = aboutTop + 'px';
-        videoBackground.style.height = aboutSection.offsetHeight + 'px';
+// Function to scale image
+function scaleImage() {
+    image.style.transform = 'scale(1.05)';
+}
 
-        // Play video when it comes into view
-        window.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
+// Function to reset image scale
+function resetImage() {
+    image.style.transform = 'scale(1)';
+}
 
-            if (scrollPosition >= aboutTop && scrollPosition <= aboutBottom) {
-                videoBackground.play();
-            } else {
-                videoBackground.pause();
-            }
-        });
-    }
+// Toggle shadow and scale effect every 0.5 seconds
+setInterval(() => {
+    toggleShadow();
+    scaleImage();
+    setTimeout(resetImage, 500);
+}, 1000);
+
 </script>
-
 </body>
 </html>
