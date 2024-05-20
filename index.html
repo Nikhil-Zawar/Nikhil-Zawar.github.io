@@ -118,10 +118,9 @@
         <h1 class="sub-title">Research</h1>
         <div class="research-list">
             <div class="research-category">
-                <img class="reserach-image" src="images/Research_article/future_proj.jpg">
+                <img class="reserach-image" src="images/Research_article/future_proj.png">
                 <a class="research-info" href="papers_data/final_code_files/future.html" style="text-align: center;">FUTURE PROJECTION</a>
             </div>
-            <!-- onclick="research_function()" -->
             <div class="research-category">
                 <img class="reserach-image" src="images/Research_article/Geo_Engineering.png">
                 <a class="research-info"  href ="papers_data/final_code_files/geoengg.html" style="text-align: center;">GEO ENGINEERING</a>
@@ -137,7 +136,7 @@
         </div>
         <div class="research-list">
             <div class="research-category">
-                <img class="reserach-image" src="images//Research_article/Sectoral_climate_change.jpeg">
+                <img class="reserach-image" src="images//Research_article/Sectoral_climate_change.png">
                 <a class="research-info" href="papers_data/final_code_files/sectoral.html" style="text-align: center;">SECTORAL CLIMATE CHANGE</a>
             </div>
             <div class="research-category">
@@ -145,7 +144,7 @@
                 <a class="research-info" href="papers_data/final_code_files/vector_bourne.html" style="text-align: center;">CLIMATE CHANGE AND VECTOR BOURNE DISEASES</a>
             </div>
             <div class="research-category">
-                <img class="reserach-image" src="images/Research_article/Network_science_and_climate_change.jpeg">
+                <img class="reserach-image" src="images/Research_article/Network_science_and_climate_change.png">
                 <a class="research-info" href="papers_data/final_code_files/network_science.html" style="text-align: center;">NETWORK SCIENCE AND CLIMATE CHANGE</a>
             </div>
             <div class="research-category">
@@ -456,7 +455,7 @@
         var currentPosition = window.scrollY || window.pageYOffset;
         var aboutSection = document.getElementById('people');
         var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
-        var scrollToPosition = aboutPosition - 20;
+        var scrollToPosition = aboutPosition + 40;
         window.scrollTo({
             top: scrollToPosition,
             behavior: 'smooth'
