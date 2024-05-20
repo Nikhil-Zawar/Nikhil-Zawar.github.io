@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DST Centre of Excellence in Climate Modeling</title>
+    <link rel="stylesheet" href="../../style_dcm.css">
+    <link rel="stylesheet" href="../../style_papers.css">
+    <script src="https://kit.fontawesome.com/5e424636bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- -------------------- TITLE AND NAVIGATION BAR --------------------------- -->
+<div class="header">
+    <div class="main-container">
+        <div class="main-first-section">
+            <!-- <a href="https://cas.iitd.ac.in/">
+                <img src="images/cas_logo.png" height="110%" width="110%">
+            </a> -->
+            <a href="https://home.iitd.ac.in/">
+                <img src="../../images/iitd_logo.png" height="80%" width="80%" >
+            </a>
+        </div>
+        <div class="main-second-section">
+            <div class="main-title">
+                <h1><a href="#">DST Centre of Excellence in Climate Modeling | CAS | IIT Delhi</a></h1>
+            </div>
+            <div class="navigbar">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a onclick="scrollToAbout_frompaper()">About</a></li>
+                        <li><a onclick="scrollToResearch()">Research</a></li>
+                        <li><a onclick="scrollToPeople()">People</a></li>
+                        <li><a onclick="scrollToOpportunities()">Opportunities</a></li>
+                        <li><a onclick="scrollToContact()">Contact Us</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="papers">
+    <div class="papers-header">
+        CLIMATE CHANGE AND VECTOR BOURNE DISEASES
+    </div>
+    <div class="papers-info">
+        <div class="paper">
+            <div class="paper-details">
+                <span class="paper-people">
+                    Parihar R. S., P. K. Bal, A. Saini, S. K. Mishra, and A. Thapliyal, 2022:
+                </span>
+                <span class="paper-title">
+                    Potential Future Malaria Transmission due to Climate Change in Odisha, India.
+                </span>
+                <span class="paper-journal">
+                    Scientific Reports,
+                </span>
+                <span class="paper-numbers">
+                    12(1), 9048.
+                </span>
+                <a class="paper-doi" href="https://www.nature.com/articles/s41598-022-13166-5" target="_blank">
+                    DOI:10.1038/s41598-022-13166-5.
+                </a>
+                <span class="paper-text">
+                    [Impact Factor: 5.0]
+                </span>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-details">
+                <span class="paper-people">
+                    Singh, R., P. K. Bal, V. Kumar, S. K. Mishra, S. Sahany, P. Salunke, S. K. Dash, and R. C. Dhiman, 2019:
+                </span>
+                <span class="paper-title">
+                    Numerical Modeling of the Dynamics of Malaria Transmission in a Highly Endemic Region of India.
+                </span>
+                <span class="paper-journal">
+                    Scientific Reports,
+                </span>
+                <span class="paper-numbers">
+                    9(1), 11903.
+                </span>
+                <a class="paper-doi" href="https://www.nature.com/articles/s41598-019-47212-6" target="_blank">
+                    DOI:10.1038/s41598- 019-47212-6.
+                </a>
+                <span class="paper-text">
+                    [Impact Factor: 5.0]
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    function scrollToAbout_frompaper() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('dcm.html#about');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 70;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+    function scrollToPeople() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('people');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 80;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+    function scrollToResearch() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('research');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 110;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollToOpportunities() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('opportunities');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 130;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+    function scrollToContact() {
+        // Get the current scroll position of the page
+        var currentPosition = window.scrollY || window.pageYOffset;
+        
+        // Get the position of the about section
+        var aboutSection = document.getElementById('contact');
+        var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
+        
+        // Add 100px to the about position
+        var scrollToPosition = aboutPosition - 120;
+        
+        // Scroll to the calculated position
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+
+</body>
+</html>
