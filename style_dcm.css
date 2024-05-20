@@ -60,6 +60,7 @@ body{
 }
 
 .main-title{
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -383,50 +384,72 @@ nav ul li a:hover::after{
     justify-content: space-between;
     /* margin-top: 30px; */
     padding-top: 30px;
-    height: 40vh;
+    height: 35vh;
 }
 
 .research-category{
-    background: #40BCD8;
-    width: 22%;
+    background: #e7e7e7;
+    /* width: 18.5%; */
+    box-shadow: 0px 0px 10px #333333d1;
+    width : 23%;
     transition: background 1.5s, transform 1s;
 }
 
 .reserach-image{
-    height: 50%;
+    height: 70%;
     width: 100%;
     /* border-radius: 10px; */
+    transition: 1s;
+    
+
 }
 
 .reserach-image img{
     /* border-radius: 10px; */
     object-fit:fill;
+    object-fit: contain;
+    /* object-fit: cover; */
     /* height: 100%; */
     /* width: 100%; */
 }
 
 .research-info{
-    height: 50%;
+    height: 30%;
     width: 100%;
 }
 
 .research-category a{
-    font-size: 20px;
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
     font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 5px; */
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 20;
     display: inline-block;
+    transition: 1s;
 }
 
 .research-category:hover{
-    background: #4CB963;
-    transform: translateY(-10px);
+    background: #6c6c6c;
+    /* transform: translateY(-10px); */
+    transform: scale(1.15);
+}
+
+.research-category:hover a{
+    color: whitesmoke;
+}
+
+
+.research-category:hover .reserach-image{
+    padding : 10px 10px;
+    border-radius: 20px;
 }
 
 .research-category-invisible{
+    width : 24%;
     background: whitesmoke;
 }
 
