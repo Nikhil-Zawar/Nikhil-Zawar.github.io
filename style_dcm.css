@@ -388,20 +388,25 @@ nav ul li a:hover::after{
 }
 
 
-.research-list{
+/* .research-list{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    /* margin-top: 30px; */
     padding-top: 30px;
     height: 35vh;
+} */
+
+.research-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
 }
 
 .research-category{
     background: #e7e7e7;
     /* width: 18.5%; */
     box-shadow: 0px 0px 10px #333333d1;
-    width : 22%;
+    /* width : 22%; */
     transition: background 1.5s, transform 1s;
 }
 
@@ -458,7 +463,7 @@ nav ul li a:hover::after{
 }
 
 .research-category-invisible{
-    width : 24%;
+    /* width : 24%; */
     background: whitesmoke;
 }
 
@@ -471,16 +476,23 @@ nav ul li a:hover::after{
     padding: 150px 0;
 }
 
-.people-list{
+/* .people-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
+} */
+
+.people-list{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 35px;
 }
 
 .person{
     /* z-index: -1; */
-    width: 18%;
+    /* width: 18%; */
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -592,7 +604,6 @@ nav ul li a:hover::after{
     justify-content: space-between;
     align-items: center;
 }
-
 .oppo-left{
     width: 50%;
     height: 100%;
@@ -795,6 +806,7 @@ nav .fas{
         margin-left: 0px;
         margin-right: 0px;
         padding-top: 100px;
+        padding-bottom: 10px;
     }
     .row{
         margin-left: 20px;
@@ -802,28 +814,32 @@ nav .fas{
         padding: 0px 0px;
         flex-direction: column;
     }
+    .hero-col1-content{
+        order: 2;
+    }
     .hero-col-1{
         margin-bottom: 30px;
     }
-    .hero-col1-content p{
+    .hero-liner-content{
         font-size: 12px;
-        margin-bottom: 10px;
-    }
-    .hero-col1-content p i{
-        font-size: 10px;
+        padding: 10px 0px;
     }
     .hero-col-2{
+        order: 1;
         display: none;
     }
     #about{
         margin-top: 10px;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
     .about-container{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .about-content{
+        width: 100%;
+        line-height: 21px;
         padding-left: 20px;
         padding-right: 20px;
         font-size: 13px;
@@ -832,9 +848,55 @@ nav .fas{
         font-size: 40px;
         padding-left: 20px;
     }
+    .about-schematic{
+        display: none;
+    }
+    #research{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .research-category-invisible{
+        display: none;
+    }
+    .research-list{
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .research-category a{
+        font-size: 12px;
+    }
+    #people{
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .people-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    #opportunities{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .opportunity-container{
+        flex-direction: column;
+    }
+    .oppo-left{
+        width: 100%;
+    }
+    .oppo-right{
+        display: none;
+        /* width: 100%; */
+    }
+    .oppo-content-container{
+        padding: 0px 0px;
+        height: 100%;
+    }
+    .oppo-content{
+        line-height: 21px;
+    }
     #contact{
-        margin-left: 0px;
-        margin-right: 0px;
+        padding-top: 0px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .contact-row{
         padding: 5px 10px;
