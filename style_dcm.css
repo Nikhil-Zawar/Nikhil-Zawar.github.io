@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background: whitesmoke;
+    background: #f5f5f5;
     color: black;
 }
 
@@ -21,8 +21,8 @@ body{
     z-index: 100;
     margin-left: 10%;
     margin-right: 10%;
-    align-items: center;
     /* background: rgb(192, 13, 13); */
+    /* align-items: center; */
 }
 
 .main-container{
@@ -133,7 +133,7 @@ nav ul li a:hover::after{
 
 
 .hero-col-1{
-    width: 35%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,22 +153,31 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.hero-col1-content p:hover{
-    transform: scale(1.05);
-    color: #0022ff;
-}
-
 .hero-col1-content p i{
     font-size: 18px;
     padding-right: 10px;
 }
 
 .hero-liner{
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: 0.5s;
     align-items: center;
+    color: #8e8e8e;
 }
+
+.hero-liner span{
+    color: black;
+    font-weight: 600;
+}
+
+.hero-liner:hover{
+    transform: scale(1.05);
+    color: #000000;
+}
+
 
 .hero-schematic{
     width: 20%;
@@ -349,6 +358,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: 0.8s;
     text-align: justify;
+    line-height: 26px;
     /* box-shadow: 10px 10px 5px #4CB963, -10px -10px 5px #40BCD8, -15px -15px 40px #40BCD8ab, 15px 15px 40px #4CB963a2; */
 
 }
@@ -391,7 +401,7 @@ nav ul li a:hover::after{
     background: #e7e7e7;
     /* width: 18.5%; */
     box-shadow: 0px 0px 10px #333333d1;
-    width : 23%;
+    width : 22%;
     transition: background 1.5s, transform 1s;
 }
 
@@ -400,7 +410,6 @@ nav ul li a:hover::after{
     width: 100%;
     /* border-radius: 10px; */
     transition: 1s;
-    
 
 }
 
@@ -409,8 +418,8 @@ nav ul li a:hover::after{
     object-fit:fill;
     object-fit: contain;
     /* object-fit: cover; */
-    /* height: 100%; */
-    /* width: 100%; */
+    /* height: 80%; */
+    /* width: 80%; */
 }
 
 .research-info{
@@ -593,6 +602,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     align-items: center;
     text-align: justify;
+    
 }
 
 .oppo-right{
@@ -620,6 +630,8 @@ nav ul li a:hover::after{
     padding: 30px 30px;
     transition: 0.5s;
     border-radius: 20px;
+    line-height: 27px;
+
 }
 .oppo-content:hover{
     background-color: rgba(255, 255, 255, 0.414);
@@ -842,4 +854,221 @@ nav .fas{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+.moving-dots{
+    /* position: relative;
+    width: 50px;
+    height: 50px; */
+    animation: moveCircle 5s linear infinite;
+}
+
+@keyframes moveCircle {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+/* Media queries for large screens and large computers */
+/* @media only screen and (min-width: 1200px) {
+    .header {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .main-first-section {
+        width: 8%;
+    }
+    .main-second-section {
+        width: 92%;
+        font-size: 20px;
+    }
+    .main-third-section {
+        width: 5%;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+    #hero {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero-col1-content p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .hero-liner-content {
+        font-size: 20px;
+    }
+    .about-container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .about-content {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .sub-title, .about-sub-title {
+        font-size: 70px;
+    }
+    #research {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .research-category a {
+        font-size: 18px;
+    }
+    #people {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 200px 0;
+    }
+    .person {
+        width: 20%;
+    }
+    .layer {
+        font-size: 16px;
+    }
+    .layer h3 {
+        font-size: 20px;
+    }
+    .layer p span {
+        font-size: 18px;
+    }
+    #opportunities {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .oppo-left {
+        width: 55%;
+    }
+    .oppo-right {
+        width: 40%;
+    }
+    .oppo-content {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #contact {
+        padding-top: 150px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .contact-left p {
+        font-size: 22px;
+    }
+    form input, form textarea {
+        font-size: 18px;
+    }
+    .copyright {
+        padding: 30px 0;
+        font-size: 18px;
+    }
+} */
+
+/* Media queries for extra-large screens */
+@media only screen and (min-width: 1600px) {
+    .header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .main-first-section {
+        width: 7%;
+    }
+    .main-second-section {
+        width: 93%;
+        font-size: 22px;
+    }
+    .main-third-section {
+        width: 3%;
+    }
+    nav ul li a {
+        font-size: 26px;
+    }
+    #hero {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .hero-col1-content p {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .hero-liner-content {
+        font-size: 22px;
+    }
+    .about-container {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .about-content {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .sub-title, .about-sub-title {
+        font-size: 80px;
+    }
+    #research {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .research-category a {
+        font-size: 20px;
+    }
+    #people {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 250px 0;
+    }
+    .person {
+        width: 22%;
+    }
+    .layer {
+        font-size: 18px;
+    }
+    .layer h3 {
+        font-size: 22px;
+    }
+    .layer p span {
+        font-size: 20px;
+    }
+    #opportunities {
+        padding-top: 250px;
+        padding-bottom: 250px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .oppo-left {
+        width: 60%;
+    }
+    .oppo-right {
+        width: 45%;
+    }
+    .oppo-content {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #contact {
+        padding-top: 200px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .contact-left p {
+        font-size: 24px;
+    }
+    form input, form textarea {
+        font-size: 20px;
+    }
+    .copyright {
+        padding: 35px 0;
+        font-size: 20px;
+    }
 }
