@@ -53,7 +53,11 @@
                         <img src="images/hero/obj1.png" width="80%" height="80%">
                     </div>
                     <div class="hero-liner-content">
-                        Refine the recently developed <span>India-Centric Climate Modeling Framework (ICCMF)</span> to better simulate Indian climate.
+                        <!-- <div class="word">India-Centric Climate Modeling Framework (ICCMF)</div> -->
+                        <!-- <div class="sentence">Refine the recently developed India-Centric Climate Modeling Framework (ICCMF) to better simulate Indian climate.</div> -->
+                        <div class="hero-liner-content">
+                            Refine the recently developed <span> India-Centric Climate Modeling Framework (ICCMF)</span> to better simulate Indian climate.
+                        </div>
                     </div>
                 </div>
                 <div class="hero-liner">
@@ -92,6 +96,8 @@
     </div>
 </div>
 
+<img class="moving-dots-3" src="images/element/rectangle2.png" alt="Element">
+
 <!-- --------------------- ABOUT -------------------------- -->
 <div id="about">
     <div class="about-container">
@@ -111,6 +117,8 @@
         </div>
     </div>
 </div>
+<img class="moving-dots-1" src="images/element/rectangle1.png" alt="Element">
+<img class="moving-dots-2" src="images/element/circle3.png" alt="Element">
 <!-- <div class="moving-dots">
     <img src="images/element/circle4.png" alt="No image loaded">
 </div> -->
@@ -175,10 +183,13 @@
     </div>
 </div>
 
+<img class="moving-dots-4" src="images/element/circle-helf2.png" alt="Element">
+
+
 <!-- ------------------- People ----------------------------- -->
 <div id="people">
     <div class="container">
-        <h1 class="sub-title">People</h1>
+        <h1 class="people-sub-title">People</h1>
         <div class="people-list">
             <div class="person">
                 <img src="images/team/Amber.png">
@@ -336,6 +347,8 @@
         <!-- <a  href="#" class="btn">See more</a> -->
     </div>
 </div>
+
+<img class="moving-dots-9" src="images/element/wave.png" alt="Element">
 <!-- ------------------- Opportunities ---------------------  -->
 <div id="opportunities">
     <div class="opportunity-container">
@@ -359,7 +372,11 @@
             <!-- <img src="images/opportune.jpg"> -->
         </div>
     </div>
+    <img class="moving-dots-8" src="images/element/circle2.png" alt="Element">
 </div>
+
+<img class="moving-dots-10" src="images/element/star2.png" alt="Element">
+
 <!-- --------------------------- CONTACT --------------------------- -->
 <div id="contact">
     <div class="contact-container">
@@ -447,7 +464,7 @@
         var currentPosition = window.scrollY || window.pageYOffset;        
         var aboutSection = document.getElementById('about');
         var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
-        var scrollToPosition = aboutPosition ;
+        var scrollToPosition = aboutPosition - 20;
         window.scrollTo({
             top: scrollToPosition,
             behavior: 'smooth'
@@ -457,7 +474,7 @@
         var currentPosition = window.scrollY || window.pageYOffset;
         var aboutSection = document.getElementById('people');
         var aboutPosition = aboutSection.getBoundingClientRect().top + currentPosition;
-        var scrollToPosition = aboutPosition + 40;
+        var scrollToPosition = aboutPosition;
         window.scrollTo({
             top: scrollToPosition,
             behavior: 'smooth'
