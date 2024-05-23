@@ -35,6 +35,12 @@ body{
     background-color: whitesmoke;
 }
 
+/* .main-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2px;
+} */
 .main-first-section{
     width: 9%;
     height:100%;
@@ -74,14 +80,15 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
+
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
     cursor: pointer;
-    padding-top: 10px;
 }
 
 nav ul li a{
@@ -111,8 +118,8 @@ nav ul li a:hover::after{
 #hero{
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 170px;
-    padding-bottom: 150px;
+    padding-top: 130px;
+    padding-bottom: 100px;
     z-index: -1;
 }
 
@@ -166,7 +173,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     transition: 0.5s;
     align-items: center;
-    color: #8e8e8e;
+    /* color: #8e8e8e; */
 }
 
 .hero-liner span{
@@ -279,33 +286,27 @@ nav ul li a:hover::after{
     background-size: cover;
 } */
 
+.moving-dots-3{
+    right: 50px;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle2 5s linear infinite;
+}
+
+@keyframes movecircle2 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100px); }
+    100% { transform: translateY(0); }
+}
+
+
+
 #about{
-    margin-top: 20px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    /* margin-top: 20px; */
+    padding-top: 80px;
+    padding-bottom: 10px;
     position: relative;
 }
-
-#video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-/* #about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('videos/videoplayback\ \(4\).mp4') no-repeat center center fixed;
-    background-size: cover;
-} */
-
 
 .about-sub-title{
     font-size: 60px;
@@ -320,11 +321,23 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
+    /* clear: both; */
+    /* font-family: 'Philosopher', sans-serif; */
+    -webkit-font-smoothing: antialiased;
     font-size: 60px;
     font-weight: 600;
     color: black;
     transition: 0.5s;
 }
+
+.people-sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
 
 .sub-title:hover{
     -webkit-text-stroke: 2px #000;
@@ -375,13 +388,39 @@ nav ul li a:hover::after{
     width: 27%;
 }
 
+.moving-dots-1{
+    z-index: -100;
+    position: absolute;
+    animation: movedots 5s linear infinite;
+}
+
+@keyframes movedots {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+
+.moving-dots-2{
+    right: 100px;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle2 5s linear infinite;
+}
+
+@keyframes movecircle2 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100px); }
+    100% { transform: translateY(0); }
+}
+
 
 /* ------------------  RESEARCH ----------------------- */
 #research{
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 10px;
 }
 
 .research-container{
@@ -400,7 +439,8 @@ nav ul li a:hover::after{
 .research-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 50px;
+    padding-top: 20px;
 }
 
 .research-category{
@@ -423,9 +463,6 @@ nav ul li a:hover::after{
     /* border-radius: 10px; */
     object-fit:fill;
     object-fit: contain;
-    /* object-fit: cover; */
-    /* height: 80%; */
-    /* width: 80%; */
 }
 
 .research-info{
@@ -448,13 +485,17 @@ nav ul li a:hover::after{
 }
 
 .research-category:hover{
-    background: #6c6c6c;
+    /* background: #68e1ffdc; */
+    background: linear-gradient(rgba(0, 204, 255, 0.6),#90effe98 ,  #0cb2ffb2);
+
     /* transform: translateY(-10px); */
     transform: scale(1.15);
 }
 
 .research-category:hover a{
-    color: whitesmoke;
+    font-weight: 600;
+    color: #000000;
+    /* color: whitesmoke; */
 }
 
 
@@ -468,13 +509,27 @@ nav ul li a:hover::after{
     background: whitesmoke;
 }
 
+.moving-dots-4{
+    right: 50px;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle4 8s linear infinite;
+}
+
+@keyframes movecircle4 {
+    0% { transform: scale(0.7); }
+    20% { transform: scale(0.8); }
+    40% { transform: scale(0.9); }
+    80% { transform: scale(0.8); }
+    100% { transform: scale(0.7); }
+}
 
 
 /* --------------- PEOPLE ------------------------ */
 #people{
     margin-left: 10%;
     margin-right: 10%;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 /* .people-list{
@@ -485,10 +540,10 @@ nav ul li a:hover::after{
 } */
 
 .people-list{
-    padding-top: 20px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 35px;
+    gap: 55px;
 }
 
 .person{
@@ -590,10 +645,24 @@ nav ul li a:hover::after{
     background: #40BCD8;
 }
 
+.moving-dots-9{
+    right: 500px;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle9 5s linear infinite;
+}
+
+@keyframes movecircle9 {
+    0% { transform: translateY(100px); }
+    50% { transform: translateY(200px); }
+    100% { transform: translateY(100px); }
+}
+
+
 /* ---------------- OPPORTUNITIES ----------------  */
 #opportunities{
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 90px;
+    padding-bottom: 80px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -634,7 +703,7 @@ nav ul li a:hover::after{
     height: 70%;
     width: 100%;
     padding: 20px 20px;
-    background: whitesmoke;
+    /* background: whitesmoke; */
 }
 
 .oppo-content{
@@ -657,6 +726,38 @@ nav ul li a:hover::after{
     /* box-shadow: 10px 10px 5px #4CB963, -10px -10px 5px #40BCD8, -15px -15px 40px #40BCD8ab, 15px 15px 40px #4CB963a2; */
 }
 
+.moving-dots-8{
+    opacity: 0.2;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle8 5s linear infinite;
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes movecircle8 {
+    0% { transform: translateY(-100px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(-100px); }
+}
+
+
+
+.moving-dots-10{
+    opacity: 0.5;
+    right: 100px;
+    z-index: -100;
+    position: absolute;
+    animation: movecircle10 5s linear infinite;
+}
+
+@keyframes movecircle10 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100px); }
+    100% { transform: translateY(0); }
+}
+
+
 
 /* ----------- CONTACT ---------------------- */
 #contact{
@@ -670,8 +771,8 @@ nav ul li a:hover::after{
 }
 
 .contact-row{
-    /* margin-left: 40px; */
-    /* margin-right: 40px; */
+        /* margin-left: 40px; */
+        /* margin-right: 40px; */
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -923,6 +1024,8 @@ nav .fas{
     /* position: relative;
     width: 50px;
     height: 50px; */
+    z-index: -100;
+    position: absolute;
     animation: moveCircle 5s linear infinite;
 }
 
@@ -1041,11 +1144,11 @@ nav .fas{
         margin-right: 10%;
     }
     .main-first-section {
-        width: 7%;
+        width: 10%;
     }
     .main-second-section {
-        width: 93%;
-        font-size: 22px;
+        width: 90%;
+        font-size: 19px;
     }
     .main-third-section {
         width: 3%;
@@ -1054,10 +1157,10 @@ nav .fas{
         font-size: 26px;
     }
     #hero {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding-top: 250px;
-        padding-bottom: 250px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 170px;
+        padding-bottom: 150px;
     }
     .hero-col1-content p {
         font-size: 26px;
@@ -1066,63 +1169,66 @@ nav .fas{
     .hero-liner-content {
         font-size: 22px;
     }
+    #about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+    
     .about-container {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .about-content {
         font-size: 20px;
         line-height: 32px;
     }
     .sub-title, .about-sub-title {
-        font-size: 80px;
+        font-size: 60px;
     }
     #research {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding-top: 250px;
-        padding-bottom: 250px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
     .research-category a {
         font-size: 20px;
     }
     #people {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 250px 0;
-    }
-    .person {
-        width: 22%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 170px 0;
     }
     .layer {
-        font-size: 18px;
+        font-size: 17px;
     }
     .layer h3 {
-        font-size: 22px;
+        font-size: 19px;
     }
     .layer p span {
-        font-size: 20px;
+        font-size: 19px;
     }
     #opportunities {
-        padding-top: 250px;
-        padding-bottom: 250px;
-        margin-left: 20%;
-        margin-right: 20%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .oppo-left {
         width: 60%;
     }
     .oppo-right {
-        width: 45%;
+        width: 30%;
     }
     .oppo-content {
         font-size: 20px;
         line-height: 32px;
     }
     #contact {
-        padding-top: 200px;
-        margin-left: 20%;
-        margin-right: 20%;
+        padding-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .contact-left p {
         font-size: 24px;
@@ -1133,5 +1239,145 @@ nav .fas{
     .copyright {
         padding: 35px 0;
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1722px) {
+    .header {
+        position: fixed;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .main-container{
+        width: 100%;
+
+    }
+    .main-first-section {
+        width: 10%;
+    }
+    .main-second-section {
+        width: 90%;
+        font-size: 20px;
+    }
+    .main-third-section {
+        width: 3%;
+    }
+    nav ul li a {
+        font-size: 26px;
+    }
+    #hero {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 150px;
+        padding-bottom: 250px;
+    }
+    .hero-col1-content p {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .hero-liner-content {
+        font-size: 22px;
+    }
+    #about{
+        padding-top: 100px;
+        padding-bottom: 150px;
+        position: relative;
+    }
+    
+    .about-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .about-content {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .sub-title, .about-sub-title {
+        color: red;
+        font-size: 80px;
+    }
+    #research {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    .research-category a {
+        font-size: 20px;
+    }
+    #people {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 150px 0;
+    }
+    .layer {
+        font-size: 17px;
+    }
+    .layer h3 {
+        font-size: 19px;
+    }
+    .layer p span {
+        font-size: 19px;
+    }
+    #opportunities {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .oppo-left {
+        width: 60%;
+    }
+    .oppo-right {
+        width: 30%;
+    }
+    .oppo-content {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #contact {
+        padding-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contact-left p {
+        font-size: 24px;
+    }
+    form input, form textarea {
+        font-size: 20px;
+    }
+    .copyright {
+        padding: 35px 0;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1722px){
+    .main-second-section {
+        width: 90%;
+        font-size: 21px;
+    }
+}
+
+
+@media only screen and (min-width: 1878px){
+    .main-second-section {
+        width: 90%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1958px){
+    .main-second-section {
+        width: 90%;
+        font-size: 23px;
+    }
+}
+
+
+@media only screen and (min-width: 2038px){
+    .main-second-section {
+        width: 90%;
+        font-size: 24px;
     }
 }
